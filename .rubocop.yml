@@ -1,3 +1,7 @@
+inherit_mode:
+  merge:
+    - Exclude
+
 require:
   - rubocop-performance
   - rubocop-rails
@@ -10,3 +14,4 @@ AllCops:
   NewCops: enable
   Exclude:
     - bin/bundle
+    - vendor/**/*
