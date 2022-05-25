@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: wealthclast_production
-  username: wealthclast
-  password: <%= ENV["WEALTHCLAST_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
