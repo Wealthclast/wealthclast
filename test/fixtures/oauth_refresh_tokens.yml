@@ -1,0 +1,4 @@
+one:
+  refresh_token: <%= SecureRandom.base58 %>
+  expires_at: 2022-05-27 21:00:13
+  account: one

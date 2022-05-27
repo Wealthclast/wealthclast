@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_27_184430) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_27_190013) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -25,4 +25,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_27_184430) do
     t.index ["uuid"], name: "index_accounts_on_uuid", unique: true
   end
 
+  create_table "oauth_refresh_tokens", force: :cascade do |t|
+    t.string "refresh_token", null: false
+    t.datetime "expires_at", null: false
+    t.bigint "account_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_oauth_refresh_tokens_on_account_id", unique: true
+  end
+
+  add_foreign_key "oauth_refresh_tokens", "accounts"
 end

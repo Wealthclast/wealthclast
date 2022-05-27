@@ -1,0 +1,6 @@
+one:
+  uuid: <%= SecureRandom.base58 %>
+  name: Fladson Gomes
+  realm: pc
+  guild: wealthclast
+  locale: en
