@@ -7,6 +7,8 @@ require "httpx/adapters/webmock"
 
 require "test_helpers/path_of_exile/oauth_helper"
 require "test_helpers/path_of_exile/api_helper"
+require "test_helpers/authorization_helper"
+
 class ActiveSupport::TestCase
   include PathOfExile::OAuthHelper
   include PathOfExile::APIHelper
@@ -27,4 +29,8 @@ class ActiveSupport::TestCase
     WebMock.allow_net_connect!
     WebMock.disable!
   end
+end
+
+class ActionDispatch::IntegrationTest
+  include AuthorizationHelper
 end
