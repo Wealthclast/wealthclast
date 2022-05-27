@@ -2,6 +2,8 @@ ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
+require "webmock/minitest"
+require "httpx/adapters/webmock"
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
@@ -9,5 +11,14 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  setup do
+    WebMock.enable!
+    WebMock.disable_net_connect!
+  end
+
+  teardown do
+    WebMock.reset!
+    WebMock.allow_net_connect!
+    WebMock.disable!
+  end
 end
