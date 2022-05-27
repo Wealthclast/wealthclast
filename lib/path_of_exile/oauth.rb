@@ -2,6 +2,7 @@ module PathOfExile
   class OAuth
     HOST = "www.pathofexile.com"
     SCOPES = "account:profile account:stashes account:characters"
+    REFRESH_TOKEN_TIMESPAN = 90.days
 
     class << self
       def authorization_code_grant_url(state:)
