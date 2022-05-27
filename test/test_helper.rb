@@ -4,7 +4,10 @@ require "rails/test_help"
 
 require "webmock/minitest"
 require "httpx/adapters/webmock"
+
+require "test_helpers/path_of_exile/oauth_helper"
 class ActiveSupport::TestCase
+  include PathOfExile::OAuthHelper
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
 
