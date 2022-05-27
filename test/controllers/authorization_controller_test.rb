@@ -35,4 +35,18 @@ class AuthorizationControllerTest < ActionDispatch::IntegrationTest
     login
     assert_redirected_to dashboard_url
   end
+
+  test "destroy should remove access_token from session" do
+    login
+    assert_not_nil @controller.session[:access_token]
+    stub_revoke_token
+    get logout_url
+    assert_nil @controller.session[:access_token]
+  end
+
+  test "destroy should redirect to root" do
+    stub_revoke_token
+    get logout_url
+    assert_redirected_to root_url
+  end
 end

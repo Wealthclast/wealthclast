@@ -29,4 +29,10 @@ class AuthorizationController < ApplicationController
       redirect_to dashboard_path
     end
   end
+
+  def destroy
+    PathOfExile::OAuth.revoke_token(token: session[:access_token])
+    reset_session
+    redirect_to root_path
+  end
 end
