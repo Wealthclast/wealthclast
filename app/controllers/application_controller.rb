@@ -7,6 +7,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def path_of_exile_client
+    @_api_client ||= PathOfExile::API.new(access_token: session[:access_token])
+  end
+
   private
 
   def logged_in?
