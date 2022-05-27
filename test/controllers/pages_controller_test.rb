@@ -20,4 +20,19 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
       get index_url
     end
   end
+
+  test "dashboard should redirect to root when not authorized" do
+    get dashboard_url
+    assert_response :redirect
+    follow_redirect!
+    assert_select "h1", "Pages#index"
+    assert_equal I18n.t("authorization.access_denied"), flash[:error]
+  end
+
+  test "dashboard should render correctly when authorized" do
+    login
+    get dashboard_url
+    assert_response :success
+    assert_select "h1", "Pages#dashboard"
+  end
 end

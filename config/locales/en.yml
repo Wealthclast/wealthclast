@@ -31,3 +31,5 @@
 
 en:
   hello: "Hello world"
+  authorization:
+    access_denied: "You must be logged in to view this page"
