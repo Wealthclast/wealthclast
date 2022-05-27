@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root "pages#index"
 
-  get "pages/dashboard"
+  get "dashboard", to: "pages#dashboard", as: "dashboard"
 end
