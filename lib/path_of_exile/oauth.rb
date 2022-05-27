@@ -32,7 +32,7 @@ module PathOfExile
             redirect_uri: "",
             scope: SCOPES
           }
-        )
+        ).json
       end
 
       def revoke_token(token:)

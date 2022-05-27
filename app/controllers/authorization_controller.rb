@@ -18,14 +18,25 @@ class AuthorizationController < ApplicationController
 
       redirect_to root_path
     elsif session[:state].present? && params[:state] == session[:state]
-      response = PathOfExile::OAuth.get_access_token(code: params[:code]).json
+      response = PathOfExile::OAuth.get_access_token(code: params[:code])
       session[:access_token] = response["access_token"]
-      session[:refresh_token] = response["refresh_token"]
 
       profile = path_of_exile_client.profile
       session[:profile_uuid] = profile["uuid"]
-      session[:profile_name] = profile["name"]
 
+      @current_account = Account.find_or_create_by(uuid: profile["uuid"]) do |a|
+        a.name = profile["name"]
+        a.realm = profile["realm"]
+        a.guild = profile["guild"]
+        a.locale = profile["locale"]
+      end
+
+      OAuthRefreshToken.find_or_create_by(account: @current_account) do |t|
+        t.refresh_token = response["refresh_token"]
+        t.expires_at = Time.now.utc + PathOfExile::OAuth::REFRESH_TOKEN_TIMESPAN
+      end
+
+      # if account is new start signup process in background to fetch all data
       redirect_to dashboard_path
     end
   end
@@ -33,6 +44,7 @@ class AuthorizationController < ApplicationController
   def destroy
     PathOfExile::OAuth.revoke_token(token: session[:access_token])
     reset_session
+    @current_account = nil
     redirect_to root_path
   end
 end

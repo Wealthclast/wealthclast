@@ -6,6 +6,7 @@ module PathOfExile
       @access_token = access_token
     end
 
+    # This request is only made at login, no need to check token validity
     def profile
       HTTPX.get(
         URI::HTTPS.build(host: HOST, path: "/profile"),
@@ -16,5 +17,7 @@ module PathOfExile
         }
       ).json
     end
+
+    # check token validity before making requests
   end
 end

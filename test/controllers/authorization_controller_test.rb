@@ -5,6 +5,7 @@ class AuthorizationControllerTest < ActionDispatch::IntegrationTest
     assert_routing "/login", controller: "authorization", action: "new"
     assert_routing "/auth/pathofexile/callback", controller: "authorization",
       action: "callback"
+    assert_routing "/logout", controller: "authorization", action: "destroy"
   end
 
   test "GET /login should redirect to pathofexile.com" do
@@ -17,18 +18,48 @@ class AuthorizationControllerTest < ActionDispatch::IntegrationTest
     assert_equal I18n.t("authorization.login_failed"), flash[:error]
   end
 
-  test "callback should set session tokens as expected" do
+  test "callback should set access tokens as expected" do
     login
     session = @controller.session
     assert_not_nil session[:access_token]
-    assert_not_nil session[:refresh_token]
   end
 
   test "callback should set profile data as expected" do
     login
     session = @controller.session
     assert_not_nil session[:profile_uuid]
-    assert_not_nil session[:profile_name]
+  end
+
+  test "callback should create an Account when not found" do
+    assert_difference("Account.count") do
+      login
+    end
+
+    assert_redirected_to dashboard_url
+  end
+
+  test "callback should create an OAuthRefreshToken when not found" do
+    assert_difference("OAuthRefreshToken.count") do
+      login
+    end
+
+    assert_redirected_to dashboard_url
+  end
+
+  test "callback should not create an Account when found" do
+    assert_no_difference("Account.count") do
+      login_as(accounts(:one))
+    end
+
+    assert_redirected_to dashboard_url
+  end
+
+  test "callback should not create an OAuthRefreshToken when found" do
+    assert_no_difference("OAuthRefreshToken.count") do
+      login_as(accounts(:one))
+    end
+
+    assert_redirected_to dashboard_url
   end
 
   test "callback should redirect to dashboard on success" do

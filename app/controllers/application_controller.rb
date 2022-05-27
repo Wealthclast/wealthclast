@@ -1,10 +1,9 @@
 class ApplicationController < ActionController::Base
   before_action :require_login
 
-  def current_user
-    if session[:profile_uuid]
-      @profile_name = session[:profile_name]
-    end
+  def current_account
+    @current_account ||= session[:profile_uuid] &&
+      Account.find_by(uuid: session[:profile_uuid])
   end
 
   def path_of_exile_client
@@ -14,7 +13,7 @@ class ApplicationController < ActionController::Base
   private
 
   def logged_in?
-    current_user.present?
+    current_account.present?
   end
 
   def require_login
