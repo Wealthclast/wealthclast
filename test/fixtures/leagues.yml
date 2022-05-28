@@ -1,0 +1,21 @@
+one:
+  name: Standard
+  realm: pc
+  starts_at: 2013-01-23 21:00:00
+  ends_at: nil
+  description: The default game mode
+  private: false
+  icon: icon.png
+  cover: cover.png
+  slug: standard
+
+two:
+  name: Conflux Sentinel League (PL21213)
+  realm: pc
+  starts_at: 2022-05-13 20:00:00
+  ends_at: 2022-07-12 20:00:00
+  description: DjRiff's Private League
+  private: true
+  icon: icon.png
+  cover: icon.png
+  slug: conflux-sentinel-league-PL21213

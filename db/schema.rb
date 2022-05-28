@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_28_054122) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_28_153913) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -31,6 +31,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_28_054122) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_characters_on_account_id"
+  end
+
+  create_table "leagues", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "realm"
+    t.datetime "starts_at"
+    t.datetime "ends_at"
+    t.string "description"
+    t.boolean "private", default: false, null: false
+    t.string "icon"
+    t.string "cover"
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_leagues_on_name", unique: true
+    t.index ["private"], name: "index_leagues_on_private"
   end
 
   create_table "oauth_refresh_tokens", force: :cascade do |t|
