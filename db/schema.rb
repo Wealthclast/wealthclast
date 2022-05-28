@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_28_163130) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_28_180110) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -31,6 +31,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_28_163130) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_characters_on_account_id"
+  end
+
+  create_table "item_snapshots", force: :cascade do |t|
+    t.bigint "item_id", null: false
+    t.bigint "league_account_id", null: false
+    t.integer "stack_size", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id", "league_account_id"], name: "index_item_snapshots_on_item_id_and_league_account_id"
+    t.index ["item_id"], name: "index_item_snapshots_on_item_id"
+    t.index ["league_account_id"], name: "index_item_snapshots_on_league_account_id"
   end
 
   create_table "items", force: :cascade do |t|
@@ -89,6 +100,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_28_163130) do
   end
 
   add_foreign_key "characters", "accounts"
+  add_foreign_key "item_snapshots", "items"
+  add_foreign_key "item_snapshots", "league_accounts"
   add_foreign_key "items", "leagues"
   add_foreign_key "league_accounts", "accounts"
   add_foreign_key "league_accounts", "leagues"
