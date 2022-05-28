@@ -1,5 +1,4 @@
 require "test_helper"
-require_relative "../../../lib/path_of_exile/oauth"
 
 class PathOfExile::OAuthTest < ActiveSupport::TestCase
   setup do

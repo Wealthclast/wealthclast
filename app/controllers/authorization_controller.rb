@@ -1,6 +1,3 @@
-require "path_of_exile/oauth"
-require "path_of_exile/api"
-
 class AuthorizationController < ApplicationController
   skip_before_action :require_login, only: [:new, :callback]
 

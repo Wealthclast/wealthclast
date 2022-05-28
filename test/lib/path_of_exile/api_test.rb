@@ -1,5 +1,4 @@
 require "test_helper"
-require_relative "../../../lib/path_of_exile/api"
 
 class PathOfExile::APITest < ActiveSupport::TestCase
   setup do
