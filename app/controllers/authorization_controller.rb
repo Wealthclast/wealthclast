@@ -27,7 +27,7 @@ class AuthorizationController < ApplicationController
       @current_account = Account.find_or_create_by(uuid: profile["uuid"]) do |a|
         a.name = profile["name"]
         a.realm = profile["realm"]
-        a.guild = profile["guild"]
+        a.guild = profile["guild"]["name"]
         a.locale = profile["locale"]
       end
 
