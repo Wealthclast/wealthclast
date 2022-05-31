@@ -4,6 +4,7 @@ require "rails/test_help"
 
 require "webmock/minitest"
 require "httpx/adapters/webmock"
+require "vcr"
 
 require "test_helpers/path_of_exile/oauth_helper"
 require "test_helpers/path_of_exile/api_helper"
@@ -33,4 +34,9 @@ end
 
 class ActionDispatch::IntegrationTest
   include AuthorizationHelper
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "test/test_helpers/vcr_cassettes"
+  config.hook_into :webmock
 end
