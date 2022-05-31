@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pathofexile.com/character
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - 'OAuth wealthclast/0.1 (contact: wealthclast@gmail.com)'
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer token
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 May 2022 13:18:55 GMT
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Expose-Headers:
+      - X-Rate-Limit-Policy, X-Rate-Limit-Rules, X-Rate-Limit-Account, X-Rate-Limit-Account-State
+      X-Rate-Limit-Policy:
+      - character-list-request-limit
+      X-Rate-Limit-Rules:
+      - Account
+      X-Rate-Limit-Account:
+      - 2:10:60,5:300:300
+      X-Rate-Limit-Account-State:
+      - 1:10:0,1:300:0
+      Strict-Transport-Security:
+      - max-age=63115200; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7137c22e682e4522-TXL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"characters":[{"id":"780d2bc12daec0baa8e7734634916d2a5531b2530499483ce050f27dd6dea396","name":"AtizirsDaughter","class":"Necromancer","league":"Standard","level":80,"experience":872573795},{"id":"c504f11326cb4ac92336078c8b59e1e75f9c43bd6a876ad3a012deb2ee217075","name":"BacchusTheThird","class":"Hierophant","league":"Standard","level":94,"experience":2718625398},{"id":"eee89a2a88ef2cdaf4946589682d467056396ed8ce32cfbb86708b24e085772f","name":"coldottpt","class":"Occultist","league":"Standard","level":41,"experience":21200326},{"id":"e86289bef09ed9ea35c347879e83014bb4279268653a341e34bd9bcf800f3eff","name":"Cursel","class":"Hierophant","league":"Standard","level":90,"experience":1984093088},{"id":"796fd714f8f0f878e3c5e3c8278109048e39dfaf7cae1bda19e21af05641fbcd","name":"Dottma","class":"Occultist","league":"Sentinel","level":86,"experience":1432398474,"current":true},{"id":"eaf2ff7487748713d1399cc90fab0d1e885843bc2970b2a782a6f0d36c2f52e1","name":"Gothsf","class":"Trickster","league":"SSF
+        Standard","level":75,"experience":577859724},{"id":"503549594c651b3f4b8f94280d49d6222f709b38b32ea88e81c3fda8240b7625","name":"Holydeliriumn","class":"Hierophant","league":"Standard","level":96,"experience":3121863027},{"id":"ca9d1091f493d44abf7fdff65f6680393009a5c0cdd8049e7f90b89a591595f8","name":"Lunarcc","class":"Saboteur","league":"Standard","level":92,"experience":2283291954},{"id":"1c8d83f397769063c7b0a15e62364ef4e0a2093480d7c20cd39bdf716dce14c8","name":"Lunna_","class":"Raider","league":"Standard","level":88,"experience":1696854096},{"id":"ad3f31a52275f90fd950c35a8812034599af54f869ed0446f20ef5d9b229a9a7","name":"MayaTheOccultist","class":"Occultist","league":"Standard","level":84,"experience":1250405518},{"id":"010411ca817502a2597a2b1de986811e329d6f776c2ca6a589edd9528ab3b230","name":"MayaTheSoulwrest","class":"Necromancer","league":"Standard","level":91,"experience":2158206836},{"id":"9cada0dc181d09d2f4776e3b165de04c0a3772cfc0abeaf69b7913ed61c42085","name":"Ngamason","class":"Berserker","league":"Standard","level":90,"experience":1934810341},{"id":"96029334c426a22ab4a44e5c4b6fc2dc887aa3079ef871fe7849be92db72b41f","name":"O_taro","class":"Hierophant","league":"Standard","level":78,"experience":728002745},{"id":"7f1c008d7b8e1f5bc72cea6b41c14e282adb3e3fa4e3e3cd1336cc4b93ea9a0d","name":"ShadowTheSoulRender","class":"Trickster","league":"Standard","level":92,"experience":2278264563},{"id":"59c36dc345a21a9cdd98e30c0f4ef49ad851c834f7f66ddd04fc05dddc3cc223","name":"Testingapp","class":"Witch","league":"Conflux
+        Sentinel League (PL21213)","level":2,"experience":1640},{"id":"7c572918062635c3866f90833e6f2233b748506d044657c439d0144c5f2aeecf","name":"Viperinaz","class":"Pathfinder","league":"Standard","level":91,"experience":2159966757}]}'
+  recorded_at: Mon, 30 May 2022 13:18:55 GMT
+recorded_with: VCR 6.1.0

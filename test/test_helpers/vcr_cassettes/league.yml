@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pathofexile.com/league/Standard
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - 'OAuth wealthclast/0.1 (contact: wealthclast@gmail.com)'
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer token
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 May 2022 10:10:28 GMT
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Expose-Headers:
+      - X-Rate-Limit-Policy, X-Rate-Limit-Rules, X-Rate-Limit-Account, X-Rate-Limit-Account-State
+      X-Rate-Limit-Policy:
+      - league-request-limit
+      X-Rate-Limit-Rules:
+      - Account
+      X-Rate-Limit-Account:
+      - 5:10:60,10:60:300
+      X-Rate-Limit-Account-State:
+      - 1:10:0,1:60:0
+      Strict-Transport-Security:
+      - max-age=63115200; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 713eeb800cd8aca7-TXL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"league":{"id":"Standard","realm":"pc","url":"https://www.pathofexile.com/ladders/league/Standard","startAt":"2013-01-23T21:00:00Z","endAt":null,"description":"The
+        default game mode.","registerAt":"2019-09-06T19:00:00Z","delveEvent":true,"rules":[]}}'
+  recorded_at: Tue, 31 May 2022 10:10:28 GMT
+recorded_with: VCR 6.1.0

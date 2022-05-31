@@ -1,0 +1,318 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pathofexile.com/stash/Standard/ca3285d0d2/7872ff05cb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - 'OAuth wealthclast/0.1 (contact: wealthclast@gmail.com)'
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer token
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 May 2022 07:44:18 GMT
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Expose-Headers:
+      - X-Rate-Limit-Policy, X-Rate-Limit-Rules, X-Rate-Limit-Account, X-Rate-Limit-Account-State
+      X-Rate-Limit-Policy:
+      - stash-request-limit
+      X-Rate-Limit-Rules:
+      - Account
+      X-Rate-Limit-Account:
+      - 15:10:60,30:300:300
+      X-Rate-Limit-Account-State:
+      - 1:10:0,1:300:0
+      Strict-Transport-Security:
+      - max-age=63115200; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 713e1563fbe5267d-TXL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"stash":{"id":"7872ff05cb","parent":"ca3285d0d2","name":"$$$","type":"CurrencyStash","index":1,"metadata":{"colour":"2c0059"},"items":[{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpY1NoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/2dc121cb4e/CurrencyRerollMagicShard.png","stackSize":10,"maxStackSize":20,"league":"Standard","id":"eda176af52ea41cd4118573192ab05319deef21ab6e7a06484315f95239e58ec","name":"","typeLine":"Alteration
+        Shard","baseType":"Alteration Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["10/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Orb of Alteration.","frameType":5,"x":25,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNYXBRdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c83c35bed5/CurrencyMapQuality.png","stackSize":879,"maxStackSize":5000,"league":"Standard","id":"e306040e365f277b2f2cfa73de69f56ad8afb3647da2c4ce2ea2cb6748acf950","name":"","typeLine":"Cartographer''s
+        Chisel","baseType":"Cartographer''s Chisel","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["879/20",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of a map"],"descrText":"Right click this item then left click
+        a map to apply it. Has greater effect on lower-rarity maps. The maximum quality
+        is 20%.","frameType":5,"x":22,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlTWFnaWNUb1JhcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/898378b439/CurrencyUpgradeMagicToRare.png","stackSize":403,"maxStackSize":5000,"league":"Standard","id":"8a4d75a79b16844d0bdd0a4334c7ec51c57664d2255e4bbda3d2da2f371bac32","name":"","typeLine":"Regal
+        Orb","baseType":"Regal Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["403/10",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a magic item to a rare item"],"descrText":"Right click this item then left
+        click a magic item to apply it. Current modifiers are retained and a new one
+        is added.","frameType":5,"x":12,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbkZyYWdtZW50IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4f379102ee/CurrencyIdentificationFragment.png","stackSize":2,"maxStackSize":5,"league":"Standard","id":"169e2084dff9179dcb558b95e98bc23aac4948695059b6b2e0ff6c120e1af674","name":"","typeLine":"Scroll
+        Fragment","baseType":"Scroll Fragment","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["2/5",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 5 fragments becomes a Scroll of Wisdom.","frameType":5,"x":23,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvVGFuZ2xlT3JiUmFuazEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3135dab202/TangleOrbRank1.png","stackSize":3,"maxStackSize":5000,"league":"Standard","id":"951742906db80c57ab06baf1e08429f34c00adbe630bb80365f07963ef32a171","name":"","typeLine":"Lesser
+        Eldritch Ichor","baseType":"Lesser Eldritch Ichor","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["3/10",0]],"displayMode":0,"type":32}],"explicitMods":["Adds
+        a Lesser Eater of Worlds implicit modifier to a Body Armour, Boots, Gloves
+        or Helmet. This replaces any existing implicit modifiers other than Searing
+        Exarch implicit modifiers."],"descrText":"Right click this item then left
+        click a normal, magic or rare item to apply it. Cannot be used on Shaper,
+        Elder or Elderslayer influenced items.","frameType":5,"x":81,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbi9GbGFza1BsYXRlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c03aace282/FlaskPlate.png","stackSize":6,"maxStackSize":5000,"league":"Standard","id":"a482d1910abdb61e3f6edaafc61c0ae32a2152c0131dd32932cbd7a255229c9d","name":"","typeLine":"Enkindling
+        Orb","baseType":"Enkindling Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["6/10",0]],"displayMode":0,"type":32}],"explicitMods":["Adds
+        an enchantment to a utility flask that will improve it but prevent it from
+        gaining charges during its effect. Replaces any existing enchantment."],"descrText":"Right
+        click this item then left click a flask to apply it.","frameType":5,"x":73,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvUmVncmV0T3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a2ebb4b5a3/RegretOrb.png","stackSize":7,"maxStackSize":5000,"league":"Standard","id":"b29b3409ea0a3c7be342f89e39c6bf56b3e6dfd3cc54247794b7c99a67883214","name":"","typeLine":"Orb
+        of Unmaking","baseType":"Orb of Unmaking","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["7/40",0]],"displayMode":0,"type":32}],"explicitMods":["Grants
+        an atlas passive skill refund point"],"descrText":"Right click on this item
+        to use it.","frameType":5,"x":70,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9NYWdpY1NoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/769d3bfabd/CurrencyUpgradeToMagicShard.png","stackSize":16,"maxStackSize":20,"league":"Standard","id":"d21beb35c07db18ddd98b692de0691d0c38c9a59b404abb9764770778c552069","name":"","typeLine":"Transmutation
+        Shard","baseType":"Transmutation Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["16/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Orb of Transmutation.","frameType":5,"x":24,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ2hhb3NTaGFyZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/fa09d6f7ba/ChaosShard.png","stackSize":6,"maxStackSize":20,"league":"Standard","id":"a4fa6c08e00e8ee01c04a71a0d3b33bd44460de9afdd1b2a7958f3aaf50ccc1e","name":"","typeLine":"Chaos
+        Shard","baseType":"Chaos Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["6/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes a Chaos Orb.","frameType":5,"x":49,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhwZWRpdGlvbi9GbGFza0luamVjdG9yIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/08e3793591/FlaskInjector.png","stackSize":11,"maxStackSize":5000,"league":"Standard","id":"fc88abb87b56c30890a0f465879dcf81e98c32be7b391c6246213202d727ee29","name":"","typeLine":"Instilling
+        Orb","baseType":"Instilling Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["11/10",0]],"displayMode":0,"type":32}],"explicitMods":["Adds
+        an enchantment to a utility flask that will cause it to be used when certain
+        conditions are met. Replaces any existing enchantment."],"descrText":"Right
+        click this item then left click a flask to apply it.","frameType":5,"x":74,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvUmVnYWxTaGFyZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/972b7b232b/RegalShard.png","stackSize":3,"maxStackSize":20,"league":"Standard","id":"29f85bdff0150b50aa6f2e88a800a3d2c7f66bb79cdde7b895154b3750f38838","name":"","typeLine":"Regal
+        Shard","baseType":"Regal Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["3/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes a Regal Orb.","frameType":5,"x":52,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ2xlYW5zaW5nRmlyZU9yYlJhbmsxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/62c98f8357/CleansingFireOrbRank1.png","stackSize":2,"maxStackSize":5000,"league":"Standard","id":"ea6ce641fd6e322636a95f697add2a7c62082831ab2eddd7cfcf547c426c8d12","name":"","typeLine":"Lesser
+        Eldritch Ember","baseType":"Lesser Eldritch Ember","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["2/10",0]],"displayMode":0,"type":32}],"explicitMods":["Adds
+        a Lesser Searing Exarch implicit modifier to a Body Armour, Boots, Gloves
+        or Helmet. This replaces any existing implicit modifiers other than Eater
+        of Worlds implicit modifiers."],"descrText":"Right click this item then left
+        click a normal, magic or rare item to apply it. Cannot be used on Shaper,
+        Elder or Elderslayer influenced items.","frameType":5,"x":77,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQmluZGluZ1NoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4c5b54654a/BindingShard.png","stackSize":10,"maxStackSize":20,"league":"Standard","id":"15964f4fa6f05b6004657c6a0d7fbd49c62e5efd9c94feda5b064b8b532ba7f4","name":"","typeLine":"Binding
+        Shard","baseType":"Binding Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["10/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Orb of Binding.","frameType":5,"x":63,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9EZWxpcml1bVNwbGludGVyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/ae73b9445e/DeliriumSplinter.png","stackSize":2578,"maxStackSize":5000,"league":"Standard","id":"e81be6f77b814733e304fe68b0ccba4e320f2e50de4360cdf64de328c92c2b86","name":"","typeLine":"Simulacrum
+        Splinter","baseType":"Simulacrum Splinter","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["2578/300",0]],"displayMode":0,"type":32}],"descrText":"Combine
+        300 Splinters to create a Simulacrum.","frameType":5,"x":44,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9DbGVhck9pbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/de298bd226/ClearOil.png","stackSize":137,"maxStackSize":5000,"league":"Standard","id":"29f732cd0bbd06eb143d7df2d5ac530ea3e8a3dd6dd284eff6ef071860eaceff","name":"","typeLine":"Clear
+        Oil","baseType":"Clear Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["137/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":33,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9BbWJlck9pbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/931f4d2fdd/AmberOil.png","stackSize":68,"maxStackSize":5000,"league":"Standard","id":"d6f8829d3adbc5943a217785fb0fdb7a6f20c32009cfb9622d55467234532d96","name":"","typeLine":"Amber
+        Oil","baseType":"Amber Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["68/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":40,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9WZXJkYW50T2lsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/55a911a67d/VerdantOil.png","stackSize":32,"maxStackSize":5000,"league":"Standard","id":"3a769954f052c3b92d5ba7dc45ab7f20275cb7df8d60fcbf776f69b54ea8c8b3","name":"","typeLine":"Verdant
+        Oil","baseType":"Verdant Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["32/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":41,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9BenVyZU9pbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/926343421b/AzureOil.png","stackSize":13,"maxStackSize":5000,"league":"Standard","id":"3c228171e9fe8ec5c5f6add0836efcf58261f2bc1689667e0e3cd228185831fa","name":"","typeLine":"Azure
+        Oil","baseType":"Azure Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["13/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":48,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9UZWFsT2lsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b6712a15cf/TealOil.png","stackSize":16,"maxStackSize":5000,"league":"Standard","id":"00a50b8420600d70dcd04014903cbf12f7d5e5f5b818257c2e01ea65526f1169","name":"","typeLine":"Teal
+        Oil","baseType":"Teal Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["16/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":47,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/28212545fd/CurrencyRerollMagic.png","stackSize":1422,"maxStackSize":5000,"league":"Standard","id":"deb79dd9d4c84a80c6ca00949afcf59e8f0f6b25befb279ea444456ddd427424","name":"","typeLine":"Orb
+        of Alteration","baseType":"Orb of Alteration","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1422/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a magic item with new random modifiers"],"descrText":"Right click this item
+        then left click a magic item to apply it.","frameType":5,"x":45,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png","stackSize":4769,"maxStackSize":5000,"league":"Standard","id":"c6a44c6b145c2cdd048348f0965fb4444c46d4de311d13b704d20754eca60299","name":"","typeLine":"Jeweller''s
+        Orb","baseType":"Jeweller''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4769/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        the number of sockets on an item"],"descrText":"Right click this item then
+        left click a socketed item to apply it. The item''s quality increases the
+        chances of obtaining more sockets.","frameType":5,"x":31,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9NYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/130762c82d/CurrencyUpgradeToMagic.png","stackSize":892,"maxStackSize":5000,"league":"Standard","id":"73a64d89a30a9e00da4057f2dbaadec0b0b9ddba15ac134ac9b7c2d1df96647d","name":"","typeLine":"Orb
+        of Transmutation","baseType":"Orb of Transmutation","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["892/40",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a normal item to a magic item"],"descrText":"Right click this item then left
+        click a normal item to apply it.","frameType":5,"x":46,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9EZWNrIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/962aa0e620/Deck.png","stackSize":246,"maxStackSize":5000,"league":"Standard","id":"13a1d512f8f275539127538047af22d54850db9786d68c325251ea497cfc88ff","name":"","typeLine":"Stacked
+        Deck","baseType":"Stacked Deck","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["246/10",0]],"displayMode":0,"type":32}],"explicitMods":["A
+        stack of unknown divination cards"],"descrText":"Right click to take a divination
+        card out of the deck.","frameType":5,"x":30,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lDb252ZXJ0VG9Ob3JtYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6953e90545/CurrencyConvertToNormal.png","stackSize":935,"maxStackSize":5000,"league":"Standard","id":"964a8fd2ba3b28695bcf3e226d62c290f9a2228c67a967d5240dd35d34d9580e","name":"","typeLine":"Orb
+        of Scouring","baseType":"Orb of Scouring","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["935/30",0]],"displayMode":0,"type":32}],"explicitMods":["Removes
+        all modifiers from an item"],"descrText":"Right click this item then left
+        click on a magic or rare item to apply it.","frameType":5,"x":10,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png","stackSize":5000,"maxStackSize":5000,"league":"Standard","id":"84b35798a097438467ed04fb8a91a334a6fd0ec2cd6198e63a28d58c6637b38d","name":"","typeLine":"Jeweller''s
+        Orb","baseType":"Jeweller''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["5000/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        the number of sockets on an item"],"descrText":"Right click this item then
+        left click a socketed item to apply it. The item''s quality increases the
+        chances of obtaining more sockets.","frameType":5,"x":19,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlUmFuZG9tbHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/eaeece27be/CurrencyUpgradeRandomly.png","stackSize":4494,"maxStackSize":5000,"league":"Standard","id":"5443bbeca66fda7d987216a7defdf983c38584033c7738ac54a8f9ae737df8e9","name":"","typeLine":"Orb
+        of Chance","baseType":"Orb of Chance","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4494/20",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a normal item to a random rarity"],"descrText":"Right click this item then
+        left click a normal item to apply it.","frameType":5,"x":6,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/28212545fd/CurrencyRerollMagic.png","stackSize":4999,"maxStackSize":5000,"league":"Standard","id":"4294f1702b4a58c391105f724c8dbc96a44ae83bfef48b75999c76608573af9c","name":"","typeLine":"Orb
+        of Alteration","baseType":"Orb of Alteration","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4999/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a magic item with new random modifiers"],"descrText":"Right click this item
+        then left click a magic item to apply it.","frameType":5,"x":43,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png","stackSize":5000,"maxStackSize":5000,"league":"Standard","id":"8a7a3534269982675f59e140e4f7a0fe526658f6af16e2d5b13cd384f631783d","name":"","typeLine":"Jeweller''s
+        Orb","baseType":"Jeweller''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["5000/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        the number of sockets on an item"],"descrText":"Right click this item then
+        left click a socketed item to apply it. The item''s quality increases the
+        chances of obtaining more sockets.","frameType":5,"x":42,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2VhbFJlZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/19547bcaf5/SealRed.png","stackSize":1,"maxStackSize":5000,"league":"Standard","id":"26bc7b932823832abd4e40da825f091290f8f13360549ecc3307479d0f2cd549","name":"","typeLine":"Master
+        Cartographer''s Seal","baseType":"Master Cartographer''s Seal","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1/10",0]],"displayMode":0,"type":32}],"explicitMods":["Uncompletes
+        any map on the Atlas"],"descrText":"Right click this item then left click
+        any map on the Atlas to apply it.","frameType":5,"x":32,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvT2lscy9TZXBpYU9pbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/580407bed5/SepiaOil.png","stackSize":104,"maxStackSize":5000,"league":"Standard","id":"14f09d8caf34a85782d17aeac766d122f8fce5fb1770a597bb365841d0158d92","name":"","typeLine":"Sepia
+        Oil","baseType":"Sepia Oil","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["104/10",0]],"displayMode":0,"type":32}],"descrText":"Can
+        be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify
+        Blighted Maps.","frameType":5,"x":34,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSG9yaXpvbk9yYiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/a48e326c68/HorizonOrb.png","stackSize":306,"maxStackSize":5000,"league":"Standard","id":"e64b7b9260c943a2f391f301543fec3740b6b4845a9139873ccd5597d6d1789b","name":"","typeLine":"Orb
+        of Horizons","baseType":"Orb of Horizons","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["306/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a map item as another of the same tier"],"descrText":"Right click this item
+        then left click a map to apply it.","frameType":5,"x":55,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRW5naW5lZXJzT3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/56b41a5ee5/EngineersOrb.png","stackSize":146,"maxStackSize":5000,"league":"Standard","id":"d4c3a3e12fa4b928908081314f2238ddcd4814a6c2ee04c00993c8187909870c","name":"","typeLine":"Engineer''s
+        Orb","baseType":"Engineer''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["146/20",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of a Strongbox"],"descrText":"Right click this item then left
+        click a Strongbox to apply it. Has greater effect on lower rarity Strongboxes.
+        The maximum quality is 20%.","frameType":5,"x":60,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvVHJhbnNmZXJPcmIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6db384ea6e/TransferOrb.png","stackSize":1,"maxStackSize":5000,"league":"Standard","id":"cbac68985d5f3cf156fa2c982eac73d40c9193d805c53a78fec5e91f6d7de2f7","name":"","typeLine":"Awakener''s
+        Orb","baseType":"Awakener''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1/10",0]],"displayMode":0,"type":32}],"explicitMods":["Destroys
+        an item, applying its influence to another of the same item class\r\nThe second
+        item is reforged as a rare item with both influence types and new modifiers"],"descrText":"Right
+        click this item, then left click the item you wish to take the influence from,
+        then left click an item of the same item class you wish to apply it to.","frameType":5,"x":61,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRXhhbHRlZFNoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a919870741/ExaltedShard.png","stackSize":19,"maxStackSize":20,"league":"Standard","id":"f02dd7ff5d25b8afa27306c6888c1b43f7f065f6d9b6e9b30daee607965ec924","name":"","typeLine":"Exalted
+        Shard","baseType":"Exalted Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["19/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Exalted Orb.","frameType":5,"x":51,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSGFyYmluZ2VyT3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/3e31090ea7/HarbingerOrb.png","stackSize":69,"maxStackSize":5000,"league":"Standard","id":"5b1f366efff35e54880e7e403688e67ae67ad3f6a058a73caeda145d46a9d478","name":"","typeLine":"Harbinger''s
+        Orb","baseType":"Harbinger''s Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["69/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a map item as another of a higher tier"],"descrText":"Right click this item
+        then left click a map to apply it.","frameType":5,"x":57,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQmluZGluZ09yYiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/66ef64410c/BindingOrb.png","stackSize":137,"maxStackSize":5000,"league":"Standard","id":"e0be01b792b5e85bd903bb9776a4a02c2c091c343583f03cf8b0f71d03f83e67","name":"","typeLine":"Orb
+        of Binding","baseType":"Orb of Binding","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["137/20",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a normal item to a rare item with up to four linked sockets"],"descrText":"Right
+        click this item then left click a normal item to apply it.","frameType":5,"x":59,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQXRsYXNSYWRpdXNUaWVyMyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/07377648d7/AtlasRadiusTier3.png","stackSize":578,"maxStackSize":5000,"league":"Standard","id":"7deabf95127aeba12b65ed6ce9acc8c239114ec8e338704cbb619fcffe35b3c2","name":"","typeLine":"Awakened
+        Sextant","baseType":"Awakened Sextant","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["578/10",0]],"displayMode":0,"type":32}],"explicitMods":["Adds
+        or rerolls a modifier on a Voidstone."],"descrText":"Right click this item
+        then left click a Voidstone to apply it.","frameType":5,"x":38,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1a54ff97d/CurrencyModValues.png","stackSize":54,"maxStackSize":5000,"league":"Standard","id":"d4b47117c869b8ec826334b5735ae2b5239e5dcb33ec90d374a09b6ec395f75f","name":"","typeLine":"Divine
+        Orb","baseType":"Divine Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["54/10",0]],"displayMode":0,"type":32}],"explicitMods":["Randomises
+        the numeric values of the random modifiers on an item"],"descrText":"Right
+        click this item then left click a magic, rare or unique item to apply it.","frameType":5,"x":20,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQW5jaWVudE9yYiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/08feb97abf/AncientOrb.png","stackSize":29,"maxStackSize":5000,"league":"Standard","id":"888449df39545aeefc2bd9685ac7d4ca9b7fae1e8639e101d9f7ebcaa768bdbd","name":"","typeLine":"Ancient
+        Orb","baseType":"Ancient Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["29/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a unique item as another of the same item class"],"descrText":"Right click
+        this item then left click a unique item to apply it.","frameType":5,"x":58,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQW5udWxsT3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/88cfdbe1e5/AnnullOrb.png","stackSize":50,"maxStackSize":5000,"league":"Standard","id":"89b9b8bafed765f2420514946f5ff60f69dd4e03727eaa0219c765a15636fa1a","name":"","typeLine":"Orb
+        of Annulment","baseType":"Orb of Annulment","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["50/20",0]],"displayMode":0,"type":32}],"explicitMods":["Removes
+        a random modifier from an item"],"descrText":"Right click this item then left
+        click on a magic or rare item to apply it.","frameType":5,"x":54,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBcm1vdXJRdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0b964e9b9e/CurrencyArmourQuality.png","stackSize":1269,"maxStackSize":5000,"league":"Standard","id":"af81203ed83e4ae1cd208ae29984e1145da8a6f5bcdf4ec08d05fb955e553c33","name":"","typeLine":"Armourer''s
+        Scrap","baseType":"Armourer''s Scrap","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1269/40",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of an armour"],"descrText":"Right click this item then left click
+        an armour to apply it. Has greater effect on lower-rarity armours. The maximum
+        quality is 20%.","frameType":5,"x":3,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRMaW5rcyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f38529edfc/CurrencyRerollSocketLinks.png","stackSize":3398,"maxStackSize":5000,"league":"Standard","id":"530fbb61be5d3b3f47fb438c77cb15c68e3b6fef96e5688222727af81ed4c566","name":"","typeLine":"Orb
+        of Fusing","baseType":"Orb of Fusing","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["3398/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        the links between sockets on an item"],"descrText":"Right click this item
+        then left click a socketed item to apply it. The item''s quality increases
+        the chances of obtaining more links.","frameType":5,"x":18,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRDb2xvdXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/136314c10a/CurrencyRerollSocketColours.png","stackSize":3855,"maxStackSize":5000,"league":"Standard","id":"e9e2b9da02219ed7a43cfc6aab91c36e1b235d1fefac491435b3120e8cb61fad","name":"","typeLine":"Chromatic
+        Orb","baseType":"Chromatic Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["3855/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        the colour of sockets on an item"],"descrText":"Right click this item then
+        left click a socketed item to apply it.","frameType":5,"x":17,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lHZW1RdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1be1273b91/CurrencyGemQuality.png","stackSize":394,"maxStackSize":5000,"league":"Standard","id":"4141a4d5371cd23bfb050d4e90a3ca922d4b898d57e6c810a59ce0ec2fa66af8","name":"","typeLine":"Gemcutter''s
+        Prism","baseType":"Gemcutter''s Prism","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["394/20",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of a gem"],"descrText":"Right click this item then left click
+        a gem to apply it. The maximum quality is 20%.","frameType":5,"x":16,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lWYWFsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/304f775089/CurrencyVaal.png","stackSize":500,"maxStackSize":5000,"league":"Standard","id":"90d8473c2e3990125a7db4aea95bb93b6e830cc616bde5572ceebd426b880c50","name":"","typeLine":"Vaal
+        Orb","baseType":"Vaal Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["500/10",0]],"displayMode":0,"type":32}],"explicitMods":["Corrupts
+        an item, modifying it unpredictably"],"descrText":"Right click this item then
+        left click an item to corrupt it. Corrupted items cannot be modified again.","frameType":5,"x":27,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb1JhcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/b102771c23/CurrencyAddModToRare.png","stackSize":54,"maxStackSize":5000,"league":"Standard","id":"6431d345b2ca62391c2c8f28c9528c8760cab8f8a79a429efec03e9aaf5d006f","name":"","typeLine":"Exalted
+        Orb","baseType":"Exalted Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["54/10",0]],"displayMode":0,"type":32}],"explicitMods":["Augments
+        a rare item with a new random modifier"],"descrText":"Right click this item
+        then left click a rare item to apply it. Rare items can have up to six random
+        modifiers.","frameType":5,"x":11,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQYXNzaXZlU2tpbGxSZWZ1bmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6b8ab3ff07/CurrencyPassiveSkillRefund.png","stackSize":995,"maxStackSize":5000,"league":"Standard","id":"b1121e8019663487fcfed3ce641104b59cd5213a06033712a8f515cfeb4fb6ef","name":"","typeLine":"Orb
+        of Regret","baseType":"Orb of Regret","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["995/40",0]],"displayMode":0,"type":32}],"explicitMods":["Grants
+        a passive skill refund point"],"descrText":"Right click on this item to use
+        it.","frameType":5,"x":7,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png","stackSize":4714,"maxStackSize":5000,"league":"Standard","id":"fe3a58afbbc658ccb8ac4a08aceedd8d73b7514b857cba3d3d2d0360a927ceed","name":"","typeLine":"Chaos
+        Orb","baseType":"Chaos Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4714/10",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a rare item with new random modifiers"],"descrText":"Right click this item
+        then left click a rare item to apply it.","frameType":5,"x":2,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9NYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/130762c82d/CurrencyUpgradeToMagic.png","stackSize":4999,"maxStackSize":5000,"league":"Standard","id":"f8a36358d23e60831c5eb16e08d524ff3a1687c51c2d69d29ad37fc400a3a3db","name":"","typeLine":"Orb
+        of Transmutation","baseType":"Orb of Transmutation","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4999/40",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a normal item to a magic item"],"descrText":"Right click this item then left
+        click a normal item to apply it.","frameType":5,"x":8,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lXZWFwb25RdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c874e03eb7/CurrencyWeaponQuality.png","stackSize":2659,"maxStackSize":5000,"league":"Standard","id":"d667396aceb93b8a2b834ee4843adc026188c07148dee1a5cfbd4ee930a3ce42","name":"","typeLine":"Blacksmith''s
+        Whetstone","baseType":"Blacksmith''s Whetstone","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["2659/20",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of a weapon"],"descrText":"Right click this item then left click
+        a weapon to apply it. Has greater effect on lower-rarity weapons. The maximum
+        quality is 20%.","frameType":5,"x":0,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lGbGFza1F1YWxpdHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8a36dffe11/CurrencyFlaskQuality.png","stackSize":513,"maxStackSize":5000,"league":"Standard","id":"e4233f3f49cd4f509b36d15c4d606e827fc07f486635e5199dd7cdc9bae84d23","name":"","typeLine":"Glassblower''s
+        Bauble","baseType":"Glassblower''s Bauble","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["513/20",0]],"displayMode":0,"type":32}],"explicitMods":["Improves
+        the quality of a flask"],"descrText":"Right click this item then left click
+        a flask to apply it. Has greater effect on lower-rarity flasks. The maximum
+        quality is 20%.","frameType":5,"x":15,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb01hZ2ljIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1a6cb2ad17/CurrencyAddModToMagic.png","stackSize":4151,"maxStackSize":5000,"league":"Standard","id":"7e405beac80892cdc58c5fdcb6e69090c0f25c805006b19d3972bcfa07709ded","name":"","typeLine":"Orb
+        of Augmentation","baseType":"Orb of Augmentation","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4151/30",0]],"displayMode":0,"type":32}],"explicitMods":["Augments
+        a magic item with a new random modifier"],"descrText":"Right click this item
+        then left click a magic item to apply it. Magic items can have up to two random
+        modifiers.","frameType":5,"x":13,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png","stackSize":1142,"maxStackSize":5000,"league":"Standard","id":"e0dc1dca574c1ec421ae4b8c662381cd00f891fce68cf0d8c136259874af825f","name":"","typeLine":"Portal
+        Scroll","baseType":"Portal Scroll","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1142/40",0]],"displayMode":0,"type":32}],"explicitMods":["Creates
+        a portal to town"],"descrText":"Right click on this item to use it.","frameType":5,"x":14,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png","stackSize":3484,"maxStackSize":5000,"league":"Standard","id":"87389aa13d2f1bd64f9942780b02c3d154777173356a2db47ee38807af85d3c4","name":"","typeLine":"Scroll
+        of Wisdom","baseType":"Scroll of Wisdom","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["3484/40",0]],"displayMode":0,"type":32}],"explicitMods":["Identifies
+        an item"],"descrText":"Right click this item then left click an unidentified
+        item to apply it.","frameType":5,"x":1,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lDb2luIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/32ca6f562d/CurrencyCoin.png","stackSize":10450,"maxStackSize":50000,"stackSizeText":"10.4K","league":"Standard","id":"5be0f481eccac0de02d6bdcc91517eb30933c70bd6f25d7f0c840a0312faf25a","name":"","typeLine":"Perandus
+        Coin","baseType":"Perandus Coin","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["10450/5000",0]],"displayMode":0,"type":32}],"descrText":"Trade
+        coins to Cadiro Perandus.","frameType":5,"x":39,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/28212545fd/CurrencyRerollMagic.png","stackSize":4998,"maxStackSize":5000,"league":"Standard","id":"1dabc62168f07ca38dcad97ec6aad77570c0c7944d8033e5f6d6fd28b60b0227","name":"","typeLine":"Orb
+        of Alteration","baseType":"Orb of Alteration","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["4998/20",0]],"displayMode":0,"type":32}],"explicitMods":["Reforges
+        a magic item with new random modifiers"],"descrText":"Right click this item
+        then left click a magic item to apply it.","frameType":5,"x":9,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJbXBsaWNpdE1vZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/c3cbf3e5ab/CurrencyImplicitMod.png","stackSize":701,"maxStackSize":5000,"league":"Standard","id":"26e6f9afa99400f911ae0b209c79784d132ae1c7faaf546698edaebfc6df3153","name":"","typeLine":"Blessed
+        Orb","baseType":"Blessed Orb","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["701/20",0]],"displayMode":0,"type":32}],"explicitMods":["Randomises
+        the numeric values of the implicit modifiers of an item"],"descrText":"Right
+        click this item then left click another item to apply it.","frameType":5,"x":21,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9SYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f0dc27cd7c/CurrencyUpgradeToRare.png","stackSize":1208,"maxStackSize":5000,"league":"Standard","id":"59cf6db9e28301466025ff35aed3fe15af76ca1179909fc82f0c94656439736a","name":"","typeLine":"Orb
+        of Alchemy","baseType":"Orb of Alchemy","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["1208/10",0]],"displayMode":0,"type":32}],"explicitMods":["Upgrades
+        a normal item to a rare item"],"descrText":"Right click this item then left
+        click a normal item to apply it.","frameType":5,"x":5,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQW5jaWVudFNoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/bb214de034/AncientShard.png","stackSize":12,"maxStackSize":20,"league":"Standard","id":"56b66cca0e4d132cbf54c8f6883772a7d1a726172c91b753f4f6e4759bb4e99b","name":"","typeLine":"Ancient
+        Shard","baseType":"Ancient Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["12/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Ancient Orb.","frameType":5,"x":62,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSG9yaXpvblNoYXJkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/396c5f134f/HorizonShard.png","stackSize":8,"maxStackSize":20,"league":"Standard","id":"1aa51d258ba30e7b1ed3a5fe488b787135460f669678379f8ae8c4a1259687da","name":"","typeLine":"Horizon
+        Shard","baseType":"Horizon Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["8/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Orb of Horizons.","frameType":5,"x":56,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRW5naW5lZXJzU2hhcmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/b2112a2c72/EngineersShard.png","stackSize":11,"maxStackSize":20,"league":"Standard","id":"35ee476bf069b7e483c4bcab293f562140ca888c8dff94783f1a3da182f9e2f1","name":"","typeLine":"Engineer''s
+        Shard","baseType":"Engineer''s Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["11/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Engineer''s Orb.","frameType":5,"x":65,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSGFyYmluZ2VyU2hhcmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9b8b1837d2/HarbingerShard.png","stackSize":16,"maxStackSize":20,"league":"Standard","id":"6ab3a474b60d9e36b25bebf94921839b8c20d5cf44eba74c3870af9cb9ce233b","name":"","typeLine":"Harbinger''s
+        Shard","baseType":"Harbinger''s Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["16/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes a Harbinger''s Orb.","frameType":5,"x":64,"y":0,"inventoryId":"Stash1"},{"verified":false,"w":1,"h":1,"icon":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQW5udWxsU2hhcmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f7a8a838a6/AnnullShard.png","stackSize":13,"maxStackSize":20,"league":"Standard","id":"d2256e991f470dfe7191d20e9851e856f023acc29aae3e888fdd7f047d0ea1a4","name":"","typeLine":"Annulment
+        Shard","baseType":"Annulment Shard","identified":true,"ilvl":0,"properties":[{"name":"Stack
+        Size","values":[["13/20",0]],"displayMode":0,"type":32}],"descrText":"A stack
+        of 20 shards becomes an Orb of Annulment.","frameType":5,"x":53,"y":0,"inventoryId":"Stash1"}]}}'
+  recorded_at: Tue, 31 May 2022 07:44:18 GMT
+recorded_with: VCR 6.1.0

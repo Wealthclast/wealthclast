@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pathofexile.com/profile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - 'OAuth wealthclast/0.1 (contact: wealthclast@gmail.com)'
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer token
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 May 2022 13:16:52 GMT
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=63115200; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7137bf2dff4daca7-TXL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"uuid":"12345678-1234-abcde-kiol-a21ce222bb78","name":"fladsongomes","realm":"pc","locale":"en_US","guild":{"name":"wealthclast"},"twitch":{"name":"fladson_gomes"}}'
+  recorded_at: Mon, 30 May 2022 13:16:52 GMT
+recorded_with: VCR 6.1.0

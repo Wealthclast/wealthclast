@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pathofexile.com/stash/Standard/ca3285d0d2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - 'OAuth wealthclast/0.1 (contact: wealthclast@gmail.com)'
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer token
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 May 2022 10:12:56 GMT
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Expose-Headers:
+      - X-Rate-Limit-Policy, X-Rate-Limit-Rules, X-Rate-Limit-Account, X-Rate-Limit-Account-State
+      X-Rate-Limit-Policy:
+      - stash-request-limit
+      X-Rate-Limit-Rules:
+      - Account
+      X-Rate-Limit-Account:
+      - 15:10:60,30:300:300
+      X-Rate-Limit-Account-State:
+      - 1:10:0,1:300:0
+      Strict-Transport-Security:
+      - max-age=63115200; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 713eef1ec8245902-TXL
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdGFzaCI6eyJpZCI6ImNhMzI4NWQwZDIiLCJuYW1lIjoiU3RhbmRhcmQiLCJ0eXBlIjoiRm9sZGVyIiwiaW5kZXgiOjAsIm1ldGFkYXRhIjp7ImZvbGRlciI6dHJ1ZSwiY29sb3VyIjoiN2M1NDM2In0sImNoaWxkcmVuIjpbeyJpZCI6Ijc4NzJmZjA1Y2IiLCJwYXJlbnQiOiJjYTMyODVkMGQyIiwibmFtZSI6IiQkJCIsInR5cGUiOiJDdXJyZW5jeVN0YXNoIiwiaW5kZXgiOjEsIm1ldGFkYXRhIjp7ImNvbG91ciI6IjJjMDA1OSJ9fSx7ImlkIjoiY2Q5OTZlOWQ2YiIsInBhcmVudCI6ImNhMzI4NWQwZDIiLCJuYW1lIjoi4pmjIiwidHlwZSI6IkRpdmluYXRpb25DYXJkU3Rhc2giLCJpbmRleCI6MiwibWV0YWRhdGEiOnsiY29sb3VyIjoiZGRkZGRkIn19LHsiaWQiOiIzODk5MjI4YmJiIiwicGFyZW50IjoiY2EzMjg1ZDBkMiIsIm5hbWUiOiLQliIsInR5cGUiOiJFc3NlbmNlU3Rhc2giLCJpbmRleCI6MywibWV0YWRhdGEiOnsiY29sb3VyIjoiODAifX0seyJpZCI6IjRhY2UyM2RkNjMiLCJwYXJlbnQiOiJjYTMyODVkMGQyIiwibmFtZSI6IsaSIiwidHlwZSI6IkZyYWdtZW50U3Rhc2giLCJpbmRleCI6NCwibWV0YWRhdGEiOnsiY29sb3VyIjoiNzMwMDU1In19LHsiaWQiOiJjOTUzMDNlYzRhIiwicGFyZW50IjoiY2EzMjg1ZDBkMiIsIm5hbWUiOiJtYXBzIChSZW1vdmUtb25seSkiLCJ0eXBlIjoiTWFwU3Rhc2giLCJpbmRleCI6NSwibWV0YWRhdGEiOnsiY29sb3VyIjoiYmYwMDAwIiwibWFwIjp7InNlcmllcyI6MTZ9fX0seyJpZCI6IjYyNGIyMjQ0ZWUiLCJwYXJlbnQiOiJjYTMyODVkMGQyIiwibmFtZSI6IlVuaXF1ZXMiLCJ0eXBlIjoiVW5pcXVlU3Rhc2giLCJpbmRleCI6NiwibWV0YWRhdGEiOnsiY29sb3VyIjoiYmY1ZTAwIn19XX19
+  recorded_at: Tue, 31 May 2022 10:12:56 GMT
+recorded_with: VCR 6.1.0
