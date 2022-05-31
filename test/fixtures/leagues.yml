@@ -1,4 +1,4 @@
-one:
+standard:
   name: Standard
   realm: pc
   starts_at: 2013-01-23 21:00:00
@@ -9,12 +9,67 @@ one:
   cover: cover.png
   slug: standard
 
-two:
+hardcore:
+  name: Hardcore
+  realm: pc
+  starts_at: 2013-01-23 21:00:00
+  ends_at: nil
+  description: A character killed in the Hardcore league is moved to the Standard league.
+  private: false
+  icon: icon.png
+  cover: cover.png
+  slug: hardcore
+
+ssf_standard:
+  name: SSF Standard
+  realm: pc
+  starts_at: 2013-01-23 21:00:00
+  ends_at: nil
+  description: SSF Standard
+  private: false
+  icon: icon.png
+  cover: cover.png
+  slug: ssf-standard
+
+ssf_hardcore:
+  name: SSF Hardcore
+  realm: pc
+  starts_at: 2013-01-23 21:00:00
+  ends_at: nil
+  description: SSF Hardcore
+  private: false
+  icon: icon.png
+  cover: cover.png
+  slug: ssf-hardcore
+
+temp:
+  name: Temporary
+  realm: pc
+  starts_at: 2022-05-13 20:00:00
+  ends_at: 2022-07-12 20:00:00
+  description: Any temp league
+  private: true
+  icon: icon.png
+  cover: icon.png
+  slug: temp
+
+temp_ssf:
+  name: SSF Temporary
+  realm: pc
+  starts_at: 2022-05-13 20:00:00
+  ends_at: 2022-07-12 20:00:00
+  description: Any temp league
+  private: true
+  icon: icon.png
+  cover: icon.png
+  slug: ssf-temp
+
+private:
   name: Conflux Sentinel League (PL21213)
   realm: pc
   starts_at: 2022-05-13 20:00:00
   ends_at: 2022-07-12 20:00:00
-  description: DjRiff's Private League
+  description: A private league
   private: true
   icon: icon.png
   cover: icon.png
