@@ -35,6 +35,43 @@ module PathOfExile
         ).json
       end
 
+      def refresh_token_grant(refresh_token:)
+        HTTPX.post(
+          URI::HTTPS.build(host: HOST, path: "/oauth/token"),
+          headers: headers,
+          form: {
+            client_id: Rails.application.credentials.oauth_id,
+            client_secret: Rails.application.credentials.oauth_secret,
+            grant_type: "refresh_token",
+            refresh_token: refresh_token
+          }
+        ).json
+      end
+
+      def client_credentials_grant
+        HTTPX.post(
+          URI::HTTPS.build(host: HOST, path: "/oauth/token"),
+          headers: headers,
+          form: {
+            client_id: Rails.application.credentials.oauth_id,
+            client_secret: Rails.application.credentials.oauth_secret,
+            grant_type: "client_credentials",
+            scope: "service:leagues"
+          }
+        ).json
+      end
+
+      def instrospect_token(token:)
+        HTTPX.post(
+          URI::HTTPS.build(host: HOST, path: "/oauth/token/introspect"),
+          headers: headers,
+          form: {
+            token: token,
+            scope: "oauth:introspect"
+          }
+        )
+      end
+
       def revoke_token(token:)
         HTTPX.post(
           URI::HTTPS.build(host: HOST, path: "/oauth/token/revoke"),
