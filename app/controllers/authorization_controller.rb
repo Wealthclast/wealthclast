@@ -33,7 +33,16 @@ class AuthorizationController < ApplicationController
         t.expires_at = Time.now.utc + PathOfExile::OAuth::REFRESH_TOKEN_TIMESPAN
       end
 
-      # if account is new start signup process in background to fetch all data
+      # if LeagueAccount.find(account: @current_account)
+      # check for new chars in new leagues
+      # else
+      # First signup
+      # TODO: fill progress bar in the view
+      # SignupStarter.new(
+      #   access_token: session[:access_token]
+      # ).call(@current_account)
+      # end
+
       redirect_to dashboard_path
     end
   end
