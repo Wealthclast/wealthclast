@@ -43,7 +43,7 @@ module PathOfExile
     private
 
     def make_request(path:, token: @access_token)
-      HTTPX.get(
+      HTTPX.plugin(:rate_limiter).get(
         URI::HTTPS.build(host: HOST, path: path),
         headers: {
           "User-Agent" => USER_AGENT,
