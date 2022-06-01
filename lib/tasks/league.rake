@@ -1,7 +1,7 @@
 namespace :league do
   desc "Fetch the current leagues and create the missing ones"
   task update_default_leagues: :environment do
-    PathOfExile::API.new.leagues["leagues"].each do |league|
+    PathOfExile::API.new.leagues.each do |league|
       puts "League '#{league["id"]}' is being created"
       League.find_or_create_by(name: league["id"]) do |l|
         l.realm = league["realm"]
