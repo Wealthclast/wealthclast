@@ -5,7 +5,7 @@ one:
 two:
   _id: 2
   account: one
-  league: Wealthclast SSF
+  league: SSF Wealthclast
 three:
   _id: 3
   account: one
@@ -14,3 +14,7 @@ four:
   _id: 4
   account: one
   league: Standard
+five:
+  _id: 5
+  account: one
+  league: Private League

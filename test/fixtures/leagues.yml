@@ -43,23 +43,23 @@ ssf_hardcore:
   slug: ssf-hardcore
 
 temp:
-  name: Temporary
+  name: Wealthclast
   realm: pc
   starts_at: 2022-05-13 20:00:00
   ends_at: 2022-07-12 20:00:00
   description: Any temp league
-  private: true
+  private: false
   icon: icon.png
   cover: icon.png
   slug: temp
 
-temp_ssf:
-  name: SSF Temporary
+ssf_temp:
+  name: SSF Wealthclast
   realm: pc
   starts_at: 2022-05-13 20:00:00
   ends_at: 2022-07-12 20:00:00
   description: Any temp league
-  private: true
+  private: false
   icon: icon.png
   cover: icon.png
   slug: ssf-temp

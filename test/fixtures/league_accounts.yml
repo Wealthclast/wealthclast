@@ -3,3 +3,21 @@ one:
   league: standard
   idle: false
   last_sync_at: 2022-05-28 17:50:32
+
+two:
+  account: one
+  league: temp
+  idle: false
+  last_sync_at: 2022-05-28 17:50:32
+
+three:
+  account: one
+  league: ssf_temp
+  idle: false
+  last_sync_at: 2022-05-28 17:50:32
+
+four:
+  account: one
+  league: private
+  idle: false
+  last_sync_at: 2022-05-28 17:50:32
