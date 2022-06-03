@@ -1,7 +1,10 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
   league_account: one
 
 two:
+  league_account: one
+  created_at: <%= Time.now.tomorrow %>
+
+three:
   league_account: two
+  created_at: <%= Time.now.tomorrow %>

@@ -1,10 +1,53 @@
-one:
+chaos_1:
   league_account: one
   snapshot: one
   item_name: "Chaos Orb"
   stack_size: 1
-two:
+chaos_2:
   league_account: one
   snapshot: one
   item_name: "Chaos Orb"
   stack_size: 2
+chaos_3:
+  league_account: one
+  snapshot: one
+  item_name: "Chaos Orb"
+  stack_size: 3
+
+chaos_1_2:
+  league_account: one
+  snapshot: two
+  item_name: "Chaos Orb"
+  stack_size: 4
+chaos_2_2:
+  league_account: one
+  snapshot: two
+  item_name: "Chaos Orb"
+  stack_size: 5
+chaos_3_2:
+  league_account: one
+  snapshot: two
+  item_name: "Chaos Orb"
+  stack_size: 10
+
+alchemy_1:
+  league_account: one
+  snapshot: one
+  item_name: "Orb of Alchemy"
+  stack_size: 1
+alchemy_2:
+  league_account: one
+  snapshot: one
+  item_name: "Orb of Alchemy"
+  stack_size: 10
+alchemy_3:
+  league_account: one
+  snapshot: one
+  item_name: "Orb of Alchemy"
+  stack_size: 2
+
+exalted:
+  league_account: one
+  snapshot: one
+  item_name: "Exalted Orb"
+  stack_size: 1
