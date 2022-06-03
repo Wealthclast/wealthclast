@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_01_101800) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_03_080144) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -92,6 +92,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_01_101800) do
     t.index ["account_id"], name: "index_oauth_refresh_tokens_on_account_id", unique: true
   end
 
+  create_table "snapshots", force: :cascade do |t|
+    t.bigint "league_account_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["league_account_id"], name: "index_snapshots_on_league_account_id"
+  end
+
   create_table "stash_tabs", force: :cascade do |t|
     t.string "_id", null: false
     t.string "name", null: false
@@ -109,5 +116,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_01_101800) do
   add_foreign_key "league_accounts", "accounts"
   add_foreign_key "league_accounts", "leagues"
   add_foreign_key "oauth_refresh_tokens", "accounts"
+  add_foreign_key "snapshots", "league_accounts"
   add_foreign_key "stash_tabs", "league_accounts"
 end
