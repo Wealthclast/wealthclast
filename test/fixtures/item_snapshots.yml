@@ -1,8 +1,10 @@
 one:
   item: chaos
   league_account: one
+  snapshot: one
   stack_size: 1
 two:
   item: chaos
   league_account: one
+  snapshot: one
   stack_size: 2
