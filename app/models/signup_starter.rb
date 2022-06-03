@@ -39,6 +39,8 @@ class SignupStarter
     # stash tabs
     account.league_accounts.temporary.each do |league_account|
       league_name = league_account.league.name
+      snapshot = Snapshot.create(league_account: league_account)
+
       @apli_client.stashes(league_name: league_name)["stashes"].each do |stash|
         next unless StashTab::VALID_TYPES.include?(stash["type"])
 
@@ -52,8 +54,8 @@ class SignupStarter
               s.league_account = league_account
             end
 
-            response = @apli_client.stash(league_name: league_name, stash_id: stash["id"], substash_id: substash["id"])
-            create_snapshot(response, league_account)
+            response = @apli_client.stash(league_name: league_name, stash_id: substash["id"])
+            create_snapshot(response, league_account, snapshot)
           end
         else
           next unless StashTab::VALID_TYPES.include?(stash["type"])
@@ -65,30 +67,25 @@ class SignupStarter
           end
 
           response = @apli_client.stash(league_name: league_name, stash_id: stash["id"])
-          create_snapshot(response, league_account)
+          create_snapshot(response, league_account, snapshot)
         end
       end
     end
   end
 
-  def create_snapshot(response, league_account)
+  def create_snapshot(response, league_account, snapshot)
     return unless response["stash"]
     items = response["stash"]["items"]
     return if items.blank?
 
     items.each do |item|
       next unless item["frameType"] == Item::CURRENCY_FRAME_TYPE
-      # this is not efficient at all
-      # temp until all items are created manually
-      found_item = Item.find_or_create_by(name: item["baseType"]) do |i|
-        # league may not be needed for the item
-        i.league = League.find_by(name: "Standard")
-        i.icon = item["baseType"] << ".png"
-      end
-
-      # missing the sum of same items
+      next if Item::IGNORED_ITEMS.include?(item["baseType"])
+      # TODO:
+      # next unless league_account.ignored_items.include? item["baseType"]
       ItemSnapshot.create(
-        item: found_item,
+        snapshot: snapshot,
+        item_name: item["baseType"],
         league_account: league_account,
         stack_size: item["stackSize"]
       )
