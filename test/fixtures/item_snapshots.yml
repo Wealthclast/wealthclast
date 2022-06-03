@@ -1,8 +1,10 @@
 one:
   league_account: one
   snapshot: one
+  item_name: "Chaos Orb"
   stack_size: 1
 two:
   league_account: one
   snapshot: one
+  item_name: "Chaos Orb"
   stack_size: 2
