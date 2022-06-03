@@ -15,6 +15,10 @@ class Account < ApplicationRecord
 
   # Does the account has any private league that is not saved
   def any_private_league_not_saved?
+    private_leagues_not_saved.any?
+  end
+
+  def private_leagues_not_saved
     private_leagues_from_chars - League.where(private: true).distinct.pluck(:name)
   end
 end
